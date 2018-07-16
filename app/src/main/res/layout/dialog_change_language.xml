@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/NormalTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/select_language" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrayLine" />
+
+    <RadioGroup
+        android:id="@+id/rg_choose_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rad_cambodia_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/NormalTextStyle"
+            android:button="@null"
+            android:drawableRight="@android:drawable/btn_radio"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="@string/cambodia"
+            app:buttonTint="@color/colorAccent"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrayLine" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rad_english_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            style="@style/NormalTextStyle"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:drawableRight="@android:drawable/btn_radio"
+            android:text="@string/english"
+            app:buttonTint="@color/colorAccent"/>
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrayLine" />
+
+</LinearLayout>

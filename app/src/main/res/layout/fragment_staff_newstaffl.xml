@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/shop"
+            android:textColor="@color/color_text_name_staff_detail"
+            android:textSize="@dimen/_10sdp"
+            />
+
+        <TextView
+            android:id="@+id/edt_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/color_text_name_staff_detail"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:background="@color/color_bg_staff"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:text="@string/username"
+            android:textColor="@color/color_text_name_staff_detail"
+            android:textSize="@dimen/_10sdp"
+            />
+
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:background="@android:color/transparent"
+            android:hint="@string/enter_username"
+            android:textColor="@color/color_text_name_staff_detail_row"
+            android:textSize="@dimen/_10sdp"
+            android:maxLength="50"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:background="@color/color_bg_staff"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:text="@string/full_name"
+            android:textColor="@color/color_text_name_staff_detail"
+            android:textSize="@dimen/_10sdp"
+            />
+
+        <EditText
+            android:id="@+id/edt_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:background="@android:color/transparent"
+            android:hint="@string/enter_full_name"
+            android:maxLength="200"
+            android:textColor="@color/color_text_name_staff_detail_row"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:background="@color/color_bg_staff"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:text="@string/phone_number"
+            android:textColor="@color/color_text_name_staff_detail"
+            android:textSize="@dimen/_10sdp"
+            />
+
+        <EditText
+            android:id="@+id/edt_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:maxLength="15"
+            android:background="@android:color/transparent"
+            android:hint="@string/enter_phone_number"
+            android:inputType="number"
+            android:textColor="@color/color_text_name_staff_detail_row"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp">
+
+    <ImageView
+        android:id="@+id/img_receipt"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_code"/>
+
+    <LinearLayout
+        android:id="@+id/ll_invoice_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_toRightOf="@+id/img_receipt"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_invoice_title"
+            style="@style/NormalTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Invoice title here"
+            android:textColor="#545355"
+            android:textSize="@dimen/_12sdp"/>
+
+        <TextView
+            android:id="@+id/txt_time"
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20:03"
+            android:textColor="#565556"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_staff_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_invoice_information"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_toRightOf="@+id/img_receipt"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_staff_name"
+            style="@style/NormalTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Staff name"
+            android:textColor="#494849"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/txt_money_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="45.25 USD"
+            android:textColor="#444345"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</RelativeLayout>

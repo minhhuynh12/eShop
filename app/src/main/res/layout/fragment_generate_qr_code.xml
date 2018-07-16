@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorScreenBackground"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_cannot_use_this_feature"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardElevation="0dp"
+        android:visibility="gone">
+    <TextView
+        android:id="@+id/txt_cannot_this_feature"
+        style="@style/NormalTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/only_for_owner_or_staff"
+        android:textColor="@color/colorRed" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_gen_qr_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardElevation="0dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    style="@style/NormalTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="@string/invoice_title" />
+
+                <EditText
+                    android:id="@+id/edt_invoice_title"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_toLeftOf="@+id/txt_get_code"
+                    android:background="@drawable/bg_gray_stroke_rectangle"
+                    android:maxLength="100"
+                    android:hint="@string/enter_invoice_title"
+                    android:padding="@dimen/_10sdp" />
+
+                <TextView
+                    style="@style/NormalTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="@string/amount" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/bg_gray_stroke_rectangle">
+
+                    <EditText
+                        android:id="@+id/edt_amount"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/spn_switch_monetary_unit"
+                        android:background="@android:color/transparent"
+                        android:inputType="numberDecimal"
+                        android:maxLength="12"
+                        android:hint="0.00"
+                        android:padding="@dimen/_10sdp" />
+
+
+                    <Spinner
+                        android:id="@+id/spn_switch_monetary_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"></Spinner>
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/NormalTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="@string/discount" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/bg_gray_stroke_rectangle">
+
+                    <EditText
+                        android:id="@+id/edt_discount"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/spn_switch_discount_unit"
+                        android:background="@android:color/transparent"
+                        android:inputType="numberDecimal"
+                        android:padding="@dimen/_10sdp"
+                        android:maxLength="12"
+                        android:hint="0%" />
+
+                    <Spinner
+                        android:id="@+id/spn_switch_discount_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"></Spinner>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt_calculate_percent_discount"
+                    style="@style/SmallBlackTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:textColor="@color/colorGreen"
+                    android:textStyle="italic" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <TextView
+                        style="@style/NormalTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/after_discont" />
+
+                    <TextView
+                        android:id="@+id/txt_total_money"
+                        style="@style/NormalTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text=""
+                        android:textColor="@color/colorGreen" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/NormalTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/payment_currency" />
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true">
+
+                        <LinearLayout
+                            android:id="@+id/linearUsdAcleda"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/boder_bg_red"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tvUsdAcleda"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginTop="3dp"
+                                android:text="USD"
+                                android:textColor="@color/colorWhite" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearKHRAcleda"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/boder_bg_while"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tvKHRAcleda"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginTop="3dp"
+                                android:text="KHR"
+                                android:textColor="@color/colorRed" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_gray_solid_corners"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/NormalTextStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/total" />
+                        <TextView
+                            android:id="@+id/tvCurrency"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="italic"
+                            android:textColor="@color/colorGreen"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_total_money_change"
+                        style="@style/NormalTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="0.00 USD"
+                        android:textSize="@dimen/button_textpadding_20dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/colorRed" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_generate_qr_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/bg_red_selector"
+                    android:text="@string/generate_qr_code"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

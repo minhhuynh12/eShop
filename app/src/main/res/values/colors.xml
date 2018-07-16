@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EA2028</color>
+    <color name="colorPrimaryDark">#E6E9EA</color>
+    <color name="colorAccent">#1E897C</color>
+    <color name="colorWhiteTransparent">#80FFFFFF</color>
+    <color name="colorRed">#EA2028</color>
+    <color name="colorGrayLight">#F5EFEF</color>
+    <color name="colorGray">#718994</color>
+    <color name="colorScreenBackground">#E6E9EA</color>
+    <color name="colorBottomBar">#F7F7F7</color>
+    <color name="colorGrayLine">#EFEFEF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="color_bg_staff">#E6E8E9</color>
+    <color name="colorGreen">#1E897C</color>
+    <color name="colorGreenLight">#4DB6AC</color>
+    <color name="colorGray2">#A2A1A4</color>
+    <color name="color_text_staft">#868686</color>
+    <color name="color_text_staff_name">#616062</color>
+    <color name="colorBlackTransparent">#90000000</color>
+    <color name="color_button_staff_detail">#EBEBEB</color>
+    <color name="color_text_code_staff_detail">#919191</color>
+    <color name="color_text_name_staff_detail">#818181</color>
+    <color name="color_text_name_staff_detail_row">#238173</color>
+    <color name="green_inprogress_paid">#31849B</color>
+</resources>

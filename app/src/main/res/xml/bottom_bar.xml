@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/action_new_receipt"
+        icon="@drawable/ic_new_receipt"
+        title="@string/new_receipt" />
+    <tab
+        id="@+id/action_receipts"
+        icon="@drawable/ic_receipts"
+        title="@string/receipts" />
+    <tab
+        id="@+id/action_reports"
+        icon="@drawable/ic_report"
+        title="@string/reports" />
+    <tab
+        id="@+id/action_staffs"
+        icon="@drawable/ic_staff"
+        title="@string/staffs" />
+    <tab
+        id="@+id/action_setting"
+        icon="@drawable/ic_setting"
+        title="@string/setting" />
+</tabs>

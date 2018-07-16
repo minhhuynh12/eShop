@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_date"
+            style="@style/NormalTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="28/02/2018"
+            android:textColor="@color/colorGray2" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_khr_money_total"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="180,500"
+                android:textColor="@color/colorGray2" />
+
+            <TextView
+                style="@style/SuperSmallGrayTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:text="@string/khr"
+                android:textColor="@color/colorGray2"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_usd_money_total"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1,236.00"
+                android:textColor="@color/colorGray2"/>
+
+            <TextView
+                style="@style/SuperSmallGrayTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:text="@string/usd"
+                android:textColor="@color/colorGray2"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="@dimen/_10sdp"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:background="@color/colorWhite"
+                                        app:cardCornerRadius="@dimen/_3sdp"
+                                        app:cardElevation="@dimen/_2sdp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rec_receipts_child"
+            android:layout_width="match_parent"
+            android:nestedScrollingEnabled="true"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

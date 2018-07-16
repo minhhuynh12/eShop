@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_bg_staff"
+    >
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_cannot_use_this_feature"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardElevation="0dp"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/txt_cannot_this_feature"
+            style="@style/NormalTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/only_for_owner"
+            android:textColor="@color/colorRed" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_app_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_bg_staff"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

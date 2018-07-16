@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_size_normal">@dimen/_40sdp</dimen>
+    <dimen name="fab_size_mini">@dimen/_25sdp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size">@dimen/_10sdp</dimen>
+    <dimen name="design_bottom_navigation_text_size">@dimen/_10sdp</dimen>
+</resources>
